@@ -25,7 +25,12 @@
 </head>
 
 <body>
-  {{ content }}
+  {{ content | safe }}
+
+  <footer class="l-footer c-footer">
+    <small><a href="/about/">Words, design and code</a>, Chen Hui Jing.</small>
+  </footer>
+  
   <script src="assets/js/scripts.js"></script>
 </body>
 
