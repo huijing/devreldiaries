@@ -22,6 +22,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Bungee';
+  src: url('../fonts/bungee-shade.woff2') format('woff2'),
+       url('../fonts/bungee-shade.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html {
   box-sizing: border-box;
@@ -36,31 +43,49 @@ html {
   padding: 0;
 }
 
-$heading-colour: #4a7205;
-$link-colour: #3454d1;
+$main-accent: #4a7205;
+$dark-link: #3454d1;
+$light-link: #efefef;
+$background: #efefef;
+$secondary-accent: #34d1bf;
 
 body {
   background-image: url('../img/bg.jpg');
   background-size: 25%;
   font-family: 'Vision', sans-serif;
+  height: 100%;
+
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 main {
   flex: 1;
+
+  display: grid;
 }
 
-footer {
+.site-footer {
+  display: flex;
   margin-top: auto;
+  padding: 0.5em;
+  background-color: $main-accent;
+  color: $light-link;
+
+  p {
+    margin: auto;
+  }
+
+  a {
+    color: $light-link;
+  }
 }
 
 a {
-  color: $link-colour;
+  color: $dark-link;
   transition: color 0.5s ease;
 
   &:hover {
-    color: darken($link-colour, 10%)
+    color: darken($dark-link, 10%)
   }
 }

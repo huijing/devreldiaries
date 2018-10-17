@@ -10,12 +10,12 @@
   <meta name="description" content="The chronicles of a freshly minted Developer Advocate on her DevRel journey">
   <meta name="author" content="Chen Hui Jing">
 
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="assets/favicons/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
   <meta name="msapplication-TileColor" content="#00a300">
   <meta name="theme-color" content="#ffffff">
 
@@ -25,13 +25,16 @@
 </head>
 
 <body>
-  {{ content | safe }}
+  <main>
+    {% include 'site-title.njk' %}
+    {{ content | safe }}
+  </main>
 
-  <footer class="l-footer c-footer">
-    <small><a href="/about/">Words, design and code</a>, Chen Hui Jing.</small>
+  <footer class="site-footer">
+    <p>Words, design and code, Chen Hui Jing. <a href="attributions">Attributions</a></p>
   </footer>
   
-  <script src="assets/js/scripts.js"></script>
+  <script src="/assets/js/scripts.js"></script>
 </body>
 
 </html>

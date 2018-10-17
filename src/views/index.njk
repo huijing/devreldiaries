@@ -1,6 +1,6 @@
 ---
 layout: base.njk
 ---
-<main>
-
-</main>
+{%- for post in collections.post -%}
+   <a href="{{ post.url | url }}"><h2>{{ post.data.title }}</h2></a>
+{%- endfor -%}
