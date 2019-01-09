@@ -2,6 +2,7 @@
 title: Hello, Avocado!
 date: 2018-10-29
 tags: post
+layout: posts.njk
 ---
 It's been a month since I joined Nexmo, and I've sort of settled into the role. I had spent my first week in London, getting to meet the team based there, settling logistics and equipment and the like. Then I settled into the Singapore office the week following that.
 

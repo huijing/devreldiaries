@@ -24,14 +24,11 @@
   <![endif]-->
 </head>
 
-<body>
-  <main>
-    {% include 'site-title.njk' %}
-    {{ content | safe }}
-  </main>
+<body class="{{ css }}">
+  {{ content | safe }}
 
-  <footer class="site-footer">
-    <p>Words, design and code, Chen Hui Jing. <a href="attributions">Attributions</a></p>
+  <footer>
+    <p>Words, design and code, Chen Hui Jing. <a href="/attributions">Attributions</a></p>
   </footer>
   
   <script src="/assets/js/scripts.js"></script>

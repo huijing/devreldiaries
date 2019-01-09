@@ -1,6 +1,20 @@
 ---
 layout: base.njk
+css: index
 ---
-{%- for post in collections.post -%}
-   <a href="{{ post.url | url }}"><h2>{{ post.data.title }}</h2></a>
-{%- endfor -%}
+<header>
+  <h1 class="title">
+    <img src="/assets/img/title.png" srcset="/assets/img/title@2x.png 2x" alt="DevRel Diaries">
+  </h1>
+</header>
+
+<main>
+  <ul>
+    {%- for post in collections.post | reverse -%}
+    <li>
+      <small>{{ post.data.date | dateFormat }}</small>
+      <a href="{{ post.url | url }}"><h2>{{ post.data.title }}</h2></a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</main>

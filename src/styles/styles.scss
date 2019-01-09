@@ -22,14 +22,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Bungee';
-  src: url('../fonts/bungee-shade.woff2') format('woff2'),
-       url('../fonts/bungee-shade.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html {
   box-sizing: border-box;
   height: 100%;
@@ -46,7 +38,7 @@ html {
 $main-accent: #4a7205;
 $dark-link: #3454d1;
 $light-link: #efefef;
-$background: #efefef;
+$background: #fbfef7;
 $secondary-accent: #34d1bf;
 
 body {
@@ -54,23 +46,80 @@ body {
   background-size: 25%;
   font-family: 'Vision', sans-serif;
   height: 100%;
-
   display: flex;
   flex-direction: column;
+  font-size: calc(1em + 0.5vw);
+}
+
+a {
+  color: $dark-link;
+  transition: color 0.5s ease;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+
+  &:hover {
+    color: darken($dark-link, 10%)
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 1em;
+
+  h1 {
+    flex: 1;
+    text-align: center;
+  }
+
+  a {
+    border-bottom: 0;
+  }
+}
+
+.home-link {
+  height: 3em;
 }
 
 main {
   flex: 1;
+  padding: 1em;
 
-  display: grid;
+  h2 {
+    display: inline-block;
+  }
+
+  p {
+    line-height: 1.4;
+    margin-bottom: 1em;
+  }
+
+  small {
+    display: block;
+  }
 }
 
-.site-footer {
+footer {
   display: flex;
   margin-top: auto;
   padding: 0.5em;
   background-color: $main-accent;
   color: $light-link;
+  font-size: 75%;
 
   p {
     margin: auto;
@@ -78,14 +127,22 @@ main {
 
   a {
     color: $light-link;
+
+    &:hover {
+      color: darken($light-link, 10%)
+    }
   }
 }
 
-a {
-  color: $dark-link;
-  transition: color 0.5s ease;
+.index,
+.attributions {
+  text-align: center;
+}
 
-  &:hover {
-    color: darken($dark-link, 10%)
+.post {
+  main {
+    background-color: $background;
+    max-width: 35em;
+    margin: auto;
   }
 }
