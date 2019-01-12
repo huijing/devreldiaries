@@ -83,11 +83,6 @@ header {
   justify-content: center;
   padding: 1em;
 
-  div {
-    flex: 1;
-    text-align: center;
-  }
-
   small {
     color: lighten($text, 20%);
   }
@@ -95,6 +90,11 @@ header {
   a {
     border-bottom: 0;
   }
+}
+
+.heading {
+  flex: 1;
+  text-align: center;
 }
 
 .home-link {
