@@ -39,6 +39,7 @@ $main-accent: #4a7205;
 $dark-link: #3454d1;
 $light-link: #efefef;
 $background: #fbfef7;
+$text: #333;
 $secondary-accent: #34d1bf;
 
 body {
@@ -49,6 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: calc(1em + 0.5vw);
+  color: $text;
 }
 
 a {
@@ -81,9 +83,13 @@ header {
   justify-content: center;
   padding: 1em;
 
-  h1 {
+  div {
     flex: 1;
     text-align: center;
+  }
+
+  small {
+    color: lighten($text, 20%);
   }
 
   a {

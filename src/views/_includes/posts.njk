@@ -4,7 +4,10 @@ css: post
 ---
 <header>
   <a href="/"><img class="home-link" src="/assets/img/home.svg"alt="Home"></a>
-  <h1>{{ title }}</h1>
+  <div>
+    <h1>{{ title }}</h1>
+    <small class="post-date">{{ date | dateFormat }}</small>
+  </div>
 </header>
 
 <main>
