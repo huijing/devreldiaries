@@ -3,6 +3,7 @@ title: I did Support and I liked it
 date: 2018-12-22
 tags: post
 layout: posts.njk
+permalink: /{{ title | slug }}/index.html
 ---
 One of the things every new Nexmo employee has to do is join the Support Academy. It is to give everyone, regardless of what department they join, be it HR, Finance, Engineering etc, some insight into how our customers use our product and the issues they face.
 

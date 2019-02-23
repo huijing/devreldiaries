@@ -3,6 +3,7 @@ title: Thoughts about localising documentation
 date: 2019-01-24
 tags: post
 layout: posts.njk
+permalink: /{{ title | slug }}/index.html
 ---
 DevRel week was great because it allowed me to hang out and work with the rest of the team in person. Most of the team work remotely and are scattered all over the globe, so having us all in the same room is quite a rare occasion.
 

@@ -3,6 +3,7 @@ title: Getting my feet wet
 date: 2018-11-24
 tags: post
 layout: posts.njk
+permalink: /{{ title | slug }}/index.html
 ---
 Coming up onto month 2, and on a personal note, I'm done with speaking engagements for 2018. For the last 3 events of the year, I introduced myself as a Developer Advocate with Nexmo, which was something new for me, as I had always given talks in my personal capacity without the support of my employer.
 

@@ -3,6 +3,7 @@ title: Off to DevRel week
 date: 2019-01-12
 tags: post
 layout: posts.njk
+permalink: /{{ title | slug }}/index.html
 ---
 I'm about to fly off to meet my team for DevRel week, which is a week=long face-to-face for the entire team, many of whom hardly ever get to see one another because, geography. Currently, I'm the only DevRel team member in the APAC region, which sounds lonely but really isn't.
 
