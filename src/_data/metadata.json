@@ -1,0 +1,16 @@
+{
+  "title": "DevRel Diaries",
+  "url": "https://devreldiaries.commons.host/",
+  "description": "Notes on working in Developer Relations",
+  "feed": {
+    "subtitle": "Notes on working in Developer Relations",
+    "filename": "feed.xml",
+    "path": "/feed.xml",
+    "url": "https://devreldiaries.commons.host/feed.xml",
+    "id": "https://devreldiaries.commons.host/"
+  },
+  "author": {
+    "name": "Chen Hui Jing",
+    "email": "huijng.chen@vonage.com"
+  }
+}
