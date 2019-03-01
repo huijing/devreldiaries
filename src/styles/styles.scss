@@ -82,6 +82,7 @@ header {
   width: 100%;
   justify-content: center;
   padding: 1em;
+  flex: none;
 
   small {
     color: lighten($text, 20%);
@@ -126,6 +127,7 @@ footer {
   background-color: $main-accent;
   color: $light-link;
   font-size: 75%;
+  flex: none;
 
   p {
     margin: auto;
