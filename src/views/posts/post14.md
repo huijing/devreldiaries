@@ -5,7 +5,7 @@ tags: post
 layout: posts.njk
 permalink: /{{ title | slug }}/index.html
 ---
-It's barely been 2 years since I started travelling out of Singapore for conferences and I've always travelled alone. Until last week, when I went to YGLF Vilnius with my good friend, [Wei](). And it was one of the best trips I've ever had.
+It's barely been 2 years since I started travelling out of Singapore for conferences and I've always travelled alone. Until last week, when I went to YGLF Vilnius with my good friend, [Wei](https://wgao19.cc/). And it was one of the best trips I've ever had.
 
 We hadn't travelled together before but we did get on really really well. Although you never really know until you spend a prolonged period of time together, right? I suppose how we approach things is fairly compatible, in that, neither of us is especially stressed out about unexpected events.
 
